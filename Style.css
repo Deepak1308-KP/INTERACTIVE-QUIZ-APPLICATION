@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+#quiz-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#progress {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+#question {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.option {
+  background: #fffefe;
+  border:none;
+  padding: 12px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+.option:hover {
+  background: #e0e0e0;
+}
+
+.correct {
+  background-color: #89f582;
+}
+
+.wrong {
+  background-color: #f1a0a0;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  background-color: #008bff;
+  color: white;
+  cursor: pointer;
+}
+
+button#next-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Centered Scoreboard */
+#score-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  z-index: 999;
+}
+
+#score-container.hide {
+  display: none;
+}
+
+#score-container button {
+  margin-top: 1rem;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#score-container button:hover {
+  background-color: #0056b3;
+}
